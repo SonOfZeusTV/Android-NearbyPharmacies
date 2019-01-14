@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="110dip"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="15"
+        android:singleLine="false"
+        android:maxWidth="20dp"
+        android:textSize="12sp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/name"
+        android:layout_weight="1"
+        android:textSize="11sp"
+        android:textColor="@color/colorAccent"
+        android:text="Distance" />
+
+    <Button
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:minWidth="0dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/distance"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:textSize="10sp"
+        android:text="ΟΔΗΓΙΕΣ" />
+
+
+    <Button
+        android:id="@+id/star"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_toRightOf="@id/navigation"
+        android:layout_alignParentRight="true"
+        android:background="@android:drawable/star_big_off" />
+
+</LinearLayout>
